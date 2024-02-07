@@ -1,9 +1,15 @@
 ---
-  el:
-    hosts:
-      centos7:
-        ansible_connection: docker
-  deb:
-    hosts:
-      ubuntu:
-        ansible_connection: docker
+el:
+  hosts:
+    stage-web-stage-0:
+      ansible_host: 84.252.131.56
+      ansible_user: root
+deb:
+  hosts:
+    develop-web-0:
+      ansible_host: 158.160.55.102
+      ansible_user: root
+local:
+  hosts:
+    localhost:
+      ansible_connection: local
