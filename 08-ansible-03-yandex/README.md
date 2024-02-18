@@ -23,6 +23,9 @@
 ![Снимок4](https://github.com/arklucis/Ansible/assets/154414081/6249ba61-6693-4733-9686-0ae625af1faf)
 
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
+![Снимок](https://github.com/arklucis/Ansible/assets/154414081/1d235031-e8b6-4ef3-92fa-e9a9b491cb0b)
+![Снимок1](https://github.com/arklucis/Ansible/assets/154414081/d92dccd3-fe8b-4c15-ab38-a53f0363518e)
+
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-03-yandex` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
