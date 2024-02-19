@@ -27,7 +27,7 @@ Playbook организован в несколько ролей, каждая �
 1. Клонируйте этот репозиторий на ваш локальный компьютер:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/arklucis/Ansible.git
     ```
 
 2. Перейдите в каталог playbook:
@@ -36,14 +36,14 @@ Playbook организован в несколько ролей, каждая �
     cd ansible-playbook-directory
     ```
 
-3. Обновите файл инвентаря (`inventory.ini`) с вашими целевыми хостами.
+3. Обновите файл инвентаря (`inventory.yml`) с вашими целевыми хостами.
 
 4. Настройте переменные в playbook по мере необходимости. Вы можете найти их в каталоге `group_vars`.
 
 5. Запустите playbook:
 
     ```bash
-    ansible-playbook -i inventory.ini site.yml
+    ansible-playbook -i inventory/prod.yml site.yml
     ```
 
 ## Теги
@@ -58,7 +58,7 @@ Playbook поддерживает следующие теги, позволяя 
 Чтобы запустить конкретный тег, используйте опцию `-t`, за которой следует имя тега:
 
 ```bash
-ansible-playbook -i inventory.ini site.yml -t nginx
+ansible-playbook -i inventory/prod.yml site.yml -t nginx
 
 
 ## Скриншоты к ДЗ
@@ -78,4 +78,4 @@ ansible-playbook -i inventory.ini site.yml -t nginx
 ![Снимок1](https://github.com/arklucis/Ansible/assets/154414081/d92dccd3-fe8b-4c15-ab38-a53f0363518e)
 ![Снимок2](https://github.com/arklucis/Ansible/assets/154414081/88b76c07-796f-40ce-a2e1-2cdb957ddb2f)
 
----
+
