@@ -59,7 +59,7 @@ Playbook поддерживает следующие теги, позволяя 
 
 ```bash
 ansible-playbook -i inventory/prod.yml site.yml -t nginx
-
+```
 
 ## Скриншоты к ДЗ
 5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
