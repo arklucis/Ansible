@@ -1,23 +1,9 @@
 server {
     listen 80;
-    server_name _;
+    server_name 51.250.72.162;
 
-    location / {
-        root {{ lighthouse_location_dir }}/lighthouse/public;
-        index index.html index.htm;
-        try_files $uri $uri/ /index.html;
-    }
-
-    location ~ \.php$ {
-        fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        include fastcgi_params;
-    }
-
-    error_page 404 /404.html;
-    error_page 500 502 503 504 /50x.html;
-    location = /50x.html {
-        root /usr/share/nginx/html;
+    location /lighthouse/ {
+        alias /opt/lighthouse/;
+        try_files $uri $uri/ /lighthouse/index.html;
     }
 }
