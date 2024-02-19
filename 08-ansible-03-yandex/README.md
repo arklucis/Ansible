@@ -78,4 +78,4 @@ ansible-playbook -i inventory/prod.yml site.yml -t nginx
 ![Снимок1](https://github.com/arklucis/Ansible/assets/154414081/d92dccd3-fe8b-4c15-ab38-a53f0363518e)
 ![Снимок2](https://github.com/arklucis/Ansible/assets/154414081/88b76c07-796f-40ce-a2e1-2cdb957ddb2f)
 
-
+10. Готовый playbook выложите в свой репозиторий, поставьте тег 08-ansible-03-yandex на фиксирующий коммит, в ответ предоставьте ссылку на него.
