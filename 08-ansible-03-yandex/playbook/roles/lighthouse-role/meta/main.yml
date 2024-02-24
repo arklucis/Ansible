@@ -1,7 +1,7 @@
 galaxy_info:
-  author: Arklucis
-  description: This role install vector on EL
-  company: your company (optional)
+  author: Arclucis
+  description: This role install ligthouse on EL
+  company: Ark
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -27,14 +27,13 @@ galaxy_info:
   # To view available platforms and versions (or releases), visit:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
-   platforms:
-      - name: "Centos"
-        versions:
-          - "all"
-   - name: RHEL
-     version:  
-  # - name: SomePlatform
+  # platforms:
+  # - name: EL
   #   versions:
+  #   - "7"
+  #   - "8"
+  # - name:
+  #  versions:
   #   - all
   #   - 1.0
   #   - 7
