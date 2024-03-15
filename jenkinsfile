@@ -13,8 +13,10 @@ pipeline {
             steps {
                 dir('/opt/jenkins_agent/workspace/Declarative Pipeline') {
                     sh 'ls -la'
+               }
+           }
         }
-
+        
         stage('Run Molecule Tests') {
             steps {
                 // Change to Ansible role directory and run Molecule tests
