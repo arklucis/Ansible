@@ -1,5 +1,6 @@
 galaxy_info:
-  author: Arclucis
+  role_name: lighthouse
+  author: arclucis
   description: This role install ligthouse on EL
   company: Ark
 
