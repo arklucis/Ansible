@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout code from repository
+                git 'https://github.com/arklucis/Ansible.git'
+            }
+        }
+        
+        stage('Install Dependencies') {
+            steps {
+                // Install Molecule and other dependencies
+                sh 'pip install molecule'
+            }
+        }
+        
+        stage('Run Molecule Tests') {
+            steps {
+                // Change to Ansible role directory and run Molecule tests
+                dir('08-ansible-03-yandex/playbook/roles/vector-role') {
+                    sh 'molecule test'
+                }
+            }
+        }
+    }
+}
