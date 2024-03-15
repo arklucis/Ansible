@@ -9,13 +9,6 @@ pipeline {
             }
         }
         
-        stage('Install Dependencies') {
-            steps {
-                // Install Molecule and other dependencies
-                sh 'pip install molecule'
-            }
-        }
-        
         stage('Run Molecule Tests') {
             steps {
                 // Change to Ansible role directory and run Molecule tests
