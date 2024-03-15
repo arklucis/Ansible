@@ -11,8 +11,11 @@ pipeline {
         
         stage('Run Molecule Tests') {
             steps {
-                // Change to Ansible role directory and run Molecule tests
-                dir('Ansible/08-ansible-03-yandex/playbook/roles/vector-role') {
+                // Change to Ansible role directory, list contents, and then run Molecule tests
+                dir('08-ansible-03-yandex/playbook/roles/vector-role') {
+                    // Change directory and list contents
+                    sh 'ls -la'
+                    // Run Molecule test
                     sh 'molecule test'
                 }
             }
