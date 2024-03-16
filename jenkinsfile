@@ -11,7 +11,7 @@ pipeline {
         
         stage('Run Molecule Tests') {
             steps {
-                dir('08-ansible-03-yandex/playbook/roles/vector-role') {
+                dir('08-ansible-03-yandex/playbook/roles/lighthouse-role') {
                     sh 'molecule test'
                 }
             }
